@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans } from "next/font/google";
+import { Funnel_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -8,11 +8,11 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const inter = Inter({
+const funnel = Funnel_Display({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-funnel",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} ${inter.variable} antialiased`}>
+      <body
+        className={`${dmSans.className} ${funnel.variable} antialiased bg-[#F8F9FA]`}
+      >
         {children}
       </body>
     </html>
