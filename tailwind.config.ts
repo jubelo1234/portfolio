@@ -17,6 +17,7 @@ export default {
       },
       screens: {
         five: "500px",
+        nine: "900px",
         tablet: "700px",
         laptop: "1200px",
       },

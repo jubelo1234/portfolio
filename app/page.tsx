@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <section className="relative h-fit laptop:h-[100dvh] min-h-[600px] laptop:max-h-[950px] pt-[120px] sm:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
+        <section className="relative h-fit laptop:h-[100dvh] min-h-[600px] laptop:max-h-[950px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
           <div className=" py-3.5 sm:py-4 absolute top-0 w-full">
             <nav className=" flex justify-between ">
               <div className="flex justify-start items-center gap-2">
@@ -41,8 +41,8 @@ export default function Home() {
           </div>
 
           {/* Hero section */}
-          <div className="flex flex-col-reverse gap-6 sm:gap-10 laptop:gap-16 laptop:flex-row laptop:justify-between items-center w-full">
-            <div className="text-center laptop:text-left">
+          <div className="flex flex-col-reverse gap-6 sm:gap-10 laptop:gap-16 md:flex-row md:justify-between items-center w-full">
+            <div className="text-center md:text-left md:max-w-[50%]">
               <h1 className="text-[32px] leading-10 five:text-4xl sm:text-[44px] sm:leading-tight lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
                 Hey there!, <br className=" sm:hidden" />
                 <span className="text-main">I&apos;m Berechiah</span>
@@ -76,7 +76,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className=" size-[170px] sm:size-[200px] laptop:size-[420px] relative rounded-[100%] overflow-hidden outline outline-2 outline-main outline-offset-[6px] sm:outline-offset-[8px] ">
+            <div className=" size-[170px] sm:size-[200px] md:size-[280px] nine:size-[300px] laptop:size-[420px] relative rounded-[100%] overflow-hidden outline outline-2 outline-main outline-offset-[6px] sm:outline-offset-[8px] ">
               <Image
                 src={profileImg}
                 alt="my photo"
