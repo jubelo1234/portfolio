@@ -12,7 +12,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
+.gradient-text {
+  background: linear-gradient(90deg, #e59200, #fca311, #a86500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @layer base {
   :root {
@@ -79,8 +83,6 @@ body::-webkit-scrollbar {
     --color-5: 90 100% 63%;
   }
 }
-
-
 
 @layer base {
   * {

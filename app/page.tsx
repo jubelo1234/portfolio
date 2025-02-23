@@ -33,9 +33,9 @@ export default function Home() {
               </div>
               <Button
                 effect="gooeyLeft"
-                className="bg-main group-hover:bg-main hover:bg-main text-light font-semibold text-sm sm:text-base h-[42px] sm:h-[46px] rounded-[10px] text-center px-5 sm:px-7"
+                className="bg-main group-hover:bg-main hover:bg-main text-light font-semibold text-sm sm:text-base h-[42px] sm:h-[46px] rounded-[10px] text-center px-5 sm:px-8"
               >
-                Download resume
+                My Resume
               </Button>
             </nav>
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
             <div className="text-center md:text-left md:max-w-[50%]">
               <h1 className="text-[32px] leading-10 five:text-4xl sm:text-[44px] sm:leading-tight lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
                 Hey there!, <br className=" sm:hidden" />
-                <span className="text-main">I&apos;m Berechiah</span>
+                <span className="gradient-text">I&apos;m Berechiah</span>
               </h1>
               <p className="pt-3 sm:pt-4 text-text text-base sm:text-lg max-w-[620px] laptop:max-w-[576px] font-medium">
                 A passionate{" "}
