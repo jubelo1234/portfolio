@@ -14,7 +14,7 @@ export default function Home() {
         <section className="relative h-fit laptop:h-[100dvh] laptop:min-h-[600px] laptop:max-h-[750px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
           <div className=" py-3.5 sm:py-4 absolute top-0 w-full">
             <nav className=" flex justify-between ">
-              <div className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-1.5">
                 <Link href="#">
                   <Image
                     src={linkedInImg}
@@ -94,15 +94,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="relative laptop:h-[100dvh] mt-16 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptopmin-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
+        <section className="relative laptop:h-[100dvh] mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptopmin-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
           <Image
             src={aboutImg}
             alt="curved background svg"
             className="hidden laptop:inline-block"
           />
           <div className="  ">
-            <h1 className="text-[32px] text-center sm:text-left leading-10 five:text-4xl sm:text-[44px] sm:leading-tight lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
-              About me
+            <h1 className="text-3xl text-center sm:text-left  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
+              <span>About me</span>
             </h1>
             <p className="pt-3 sm:pt-4 text-text text-base sm:text-lg  laptop:text-left">
               I’m a dedicated frontend developer with a sharp eye for detail and
