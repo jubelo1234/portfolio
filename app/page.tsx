@@ -5,12 +5,13 @@ import profilebg from "@/assets/images/profile-bg.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import aboutImg from "@/assets/images/abt-side.png";
 
 export default function Home() {
   return (
     <>
       <main>
-        <section className="relative h-fit laptop:h-[100dvh] min-h-[600px] laptop:max-h-[950px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
+        <section className="relative h-fit laptop:h-[100dvh] laptop:min-h-[600px] laptop:max-h-[750px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
           <div className=" py-3.5 sm:py-4 absolute top-0 w-full">
             <nav className=" flex justify-between ">
               <div className="flex justify-start items-center gap-2">
@@ -91,6 +92,48 @@ export default function Home() {
                 priority={true}
               />
             </div>
+          </div>
+        </section>
+        <section className="relative laptop:h-[100dvh] mt-16 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptopmin-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
+          <Image
+            src={aboutImg}
+            alt="curved background svg"
+            className="hidden laptop:inline-block"
+          />
+          <div className="  ">
+            <h1 className="text-[32px] text-center sm:text-left leading-10 five:text-4xl sm:text-[44px] sm:leading-tight lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
+              About me
+            </h1>
+            <p className="pt-3 sm:pt-4 text-text text-base sm:text-lg  laptop:text-left">
+              I’m a dedicated frontend developer with a sharp eye for detail and
+              <span className="font-semibold text-orange-500">
+                {" "}
+                years of experience working with React.
+              </span>{" "}
+              I specialize in building{" "}
+              <span className="font-semibold text-orange-500">
+                {" "}
+                scalable, high-performance web applications
+              </span>{" "}
+              that are both visually appealing and highly functional. <br />{" "}
+              <br /> Over the years, I’ve worked with{" "}
+              <span className="font-semibold text-orange-500">
+                {" "}
+                various companies,
+              </span>{" "}
+              helping them create seamless user experiences through clean,
+              maintainable code, intuitive interfaces, and optimized
+              performance. I take pride in refining every detail, ensuring that
+              the applications I build are not only efficient but also engaging
+              and accessible. <br /> <br />
+              Always eager to learn, I stay up to date with the{" "}
+              <span className="font-semibold text-orange-500">
+                {" "}
+                latest technologies
+              </span>{" "}
+              and best practices to continually enhance my work. Let’s build
+              impactful experiences together!🚀🚀
+            </p>
           </div>
         </section>
       </main>
