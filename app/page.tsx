@@ -108,8 +108,8 @@ export default function Home() {
               I’m a dedicated frontend developer with a sharp eye for detail and
               <span className="font-semibold text-orange-500">
                 {" "}
-                years of experience working with React.
-              </span>{" "}
+                years of experience working with React
+              </span>{" "} developing various websites and webapps.
               I specialize in building{" "}
               <span className="font-semibold text-orange-500">
                 {" "}
