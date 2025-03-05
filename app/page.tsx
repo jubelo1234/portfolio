@@ -6,12 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
+import nextLogo from "@/assets/svgs/next.svg";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
     <>
       <main>
-        <section className="relative h-fit laptop:h-[100dvh] laptop:min-h-[600px] laptop:max-h-[750px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
+        <section className="relative h-fit laptop:h-[100dvh] laptop:min-h-[650px] laptop:max-h-[750px] pt-[120px] sm:pt-[150px] md:pt-[130px] nine:pt-[150px] laptop:pt-[80px] w-[90vw] mx-auto max-w-web-max laptop:flex justify-center items-center">
           <div className=" py-3.5 sm:py-4 absolute top-0 w-full">
             <nav className=" flex justify-between ">
               <div className="flex justify-start items-center gap-1.5">
@@ -94,7 +96,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="relative laptop:h-[100dvh] mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptopmin-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
+        <section className="relative laptop:h-[100dvh] mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptop:min-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
           <Image
             src={aboutImg}
             alt="curved background svg"
@@ -109,8 +111,8 @@ export default function Home() {
               <span className="font-semibold text-orange-500">
                 {" "}
                 years of experience working with React
-              </span>{" "} developing various websites and webapps.
-              I specialize in building{" "}
+              </span>{" "}
+              developing various websites and webapps. I specialize in building{" "}
               <span className="font-semibold text-orange-500">
                 {" "}
                 scalable, high-performance web applications
@@ -135,6 +137,20 @@ export default function Home() {
               impactful experiences together!🚀🚀
             </p>
           </div>
+        </section>
+        <section className="  mt-14 sm:mt-[84px] lg:mt-[108px]  w-[90vw] max-w-7xl mx-auto">
+          <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
+            Skillset & Tools
+          </h1>
+          <div className="mt-6 md:mt-7 lg:mt-9">
+            <Skills />
+          </div>
+        </section>
+        <section className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[170px]">
+          <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
+            Selected Work
+          </h1>
+          <div className="mt-6 md:mt-7 lg:mt-9"></div>
         </section>
       </main>
     </>

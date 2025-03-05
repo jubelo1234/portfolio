@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.className} ${funnel.variable} antialiased bg-[#F8F9FA]`}
+        className={`${dmSans.className} ${funnel.variable} antialiased `}
       >
         {children}
       </body>
