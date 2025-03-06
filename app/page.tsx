@@ -9,6 +9,8 @@ import aboutImg from "@/assets/images/abt-side.png";
 import nextLogo from "@/assets/svgs/next.svg";
 import Skills from "@/components/skills";
 
+// i want to push something
+
 export default function Home() {
   return (
     <>
