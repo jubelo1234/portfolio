@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
 import Skills from "@/components/skills";
 
-
 export default function Home() {
   return (
     <>
@@ -17,7 +16,11 @@ export default function Home() {
           <div className=" py-3.5 sm:py-4 absolute top-0 w-full">
             <nav className=" flex justify-between ">
               <div className="flex justify-start items-center gap-1.5">
-                <Link href="#">
+                <Link
+                  href="www.linkedin.com/in/berechiah"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={linkedInImg}
                     alt="checkout my linkedin profile"
@@ -25,7 +28,11 @@ export default function Home() {
                     priority={true}
                   />
                 </Link>
-                <Link href="#">
+                <Link
+                  href="https://github.com/jubelo1234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={githubImG}
                     alt="checkout my github profile"
@@ -146,7 +153,10 @@ export default function Home() {
             <Skills />
           </div>
         </section>
-        <section id="my-work" className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]">
+        <section
+          id="my-work"
+          className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]"
+        >
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Selected Work
           </h1>
