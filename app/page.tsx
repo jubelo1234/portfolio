@@ -17,7 +17,7 @@ export default function Home() {
             <nav className=" flex justify-between ">
               <div className="flex justify-start items-center gap-1.5">
                 <Link
-                  href="www.linkedin.com/in/berechiah"
+                  href="https://www.linkedin.com/in/berechiah"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="relative laptop:h-[100dvh] mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-0 laptop:min-h-[600px] laptop:max-h-[750px] place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
+        <section className="relative  mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-12 place-items-center w-[90vw] max-w-7xl grid grid-cols-1 laptop:grid-cols-2 gap-10 mx-auto">
           <Image
             src={aboutImg}
             alt="curved background svg"
@@ -145,7 +145,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="  mt-14 sm:mt-[84px] lg:mt-[108px]  w-[90vw] max-w-7xl mx-auto">
+        <section className="  mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]  w-[90vw] max-w-7xl mx-auto">
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Skill set & Tools
           </h1>
