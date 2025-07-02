@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-padding-top: 58px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+
 body {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   overflow: -moz-scrollbars-none; /* For Firefox */

@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
 import Skills from "@/components/skills";
 
-// i want to push something
 
 export default function Home() {
   return (
@@ -62,7 +61,7 @@ export default function Home() {
                 amazing together.
               </p>
               <div className="grid grid-cols-2 gap-2.5 sm:gap-4 five:grid-cols-2 mt-5 sm:mt-7 max-w-[620px] laptop:max-w-[565px]">
-                <Link href="#">
+                <Link href="#my-work">
                   <Button
                     effect="shineHover"
                     className="bg-main  hover:bg-main text-light font-semibold w-full text-sm sm:text-base h-[46px] rounded-[10px] text-center px-2"
@@ -147,7 +146,7 @@ export default function Home() {
             <Skills />
           </div>
         </section>
-        <section className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]">
+        <section id="my-work" className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]">
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Selected Work
           </h1>
