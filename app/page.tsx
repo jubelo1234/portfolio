@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
-import nextLogo from "@/assets/svgs/next.svg";
 import Skills from "@/components/skills";
 
 // i want to push something
@@ -114,7 +113,7 @@ export default function Home() {
                 {" "}
                 years of experience working with React
               </span>{" "}
-              developing various websites and webapps. I specialize in building{" "}
+              developing various websites and web apps. I specialize in building{" "}
               <span className="font-semibold text-orange-500">
                 {" "}
                 scalable, high-performance web applications
@@ -142,13 +141,13 @@ export default function Home() {
         </section>
         <section className="  mt-14 sm:mt-[84px] lg:mt-[108px]  w-[90vw] max-w-7xl mx-auto">
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
-            Skillset & Tools
+            Skill set & Tools
           </h1>
           <div className="mt-6 md:mt-7 lg:mt-9">
             <Skills />
           </div>
         </section>
-        <section className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[170px]">
+        <section className="mt-14 sm:mt-[84px] lg:mt-[108px] laptop:mt-[200px]">
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Selected Work
           </h1>
