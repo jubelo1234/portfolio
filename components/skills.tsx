@@ -1,7 +1,6 @@
 import Image from "next/image";
 import next from "@/assets/svgs/next.svg";
 import astro from "@/assets/svgs/astro.svg";
-import git from "@/assets/svgs/git.svg";
 import authJs from "@/assets/svgs/authJs.svg";
 import vitest from "@/assets/svgs/vitest.svg";
 import react from "@/assets/svgs/react.svg";
