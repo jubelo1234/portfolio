@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
 import Skills from "@/components/skills";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -160,7 +161,9 @@ export default function Home() {
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Selected Work
           </h1>
-          <div className="mt-6 md:mt-7 lg:mt-9"></div>
+          <div className="mt-6 md:mt-7 lg:mt-9">
+            <Projects />
+          </div>
         </section>
       </main>
     </>
