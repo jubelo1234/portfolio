@@ -1,4 +1,4 @@
-import prodevsImage from "@/assets/images/prodevs.png";
+import prodevsImage from "@/assets/images/prodevs2.jpg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -7,7 +7,7 @@ export default function Projects() {
     {
       title: "Prodevs",
       description:
-        "A modern, responsive website for ProDevs, a comprehensive talent marketplace that connects global companies with vetted African software developers, designers, and tech professionals. The site showcases multiple hiring models (freelance gigs, full-time placements, managed teams), features detailed service pages for different talent categories, client success stories, and streamlined user flows. Built with a focus on conversion optimization, intuitive navigation, and performance to effectively communicate ProDevs' mission of connecting 1 million talents to opportunities by 2030.",
+        "A modern, responsive website for ProDevs, a talent marketplace connecting global companies with vetted African software developers and tech professionals. The site showcases multiple hiring models (freelance, full-time, managed teams), features service pages for different talent categories, client success stories, and streamlined user flows. Built with a focus on conversion optimization and performance.",
       role: "Lead Frontend Developer",
       techStack: ["Laravel", "Tailwind CSS", "Javascript", "GSAP"],
       link: "https://prodevs.com",
@@ -15,22 +15,36 @@ export default function Projects() {
     },
   ];
   return (
-    <div>
+    <div className="w-[90vw] max-w-7xl mx-auto">
       {projectsData.map((project, id) => (
-        <div key={id}>
-          <div>
-            <Image src={project.image} alt={project.title} />
+        <div
+          key={id}
+          className="w-full flex flex-col gap-4 lg:grid grid-cols-2 laptop:gap-16"
+        >
+          <div className="w-full lg:h-[430px] h-[200px] relative overflow-hidden rounded-[12px] shadow-[0_0_64px_0_#0000001A] border-2 border-main">
+            <Image
+              src={project.image}
+              alt={project.title}
+              className="w-full object-cover object-top absolute"
+            />
           </div>
-          <div>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <div>
+          <div className="lg:flex lg:flex-col lg:justify-center ">
+            <h2 className="lg:text-[40px] lg:leading-tight font-bold">
+              {project.title}
+            </h2>
+            <p className="text-text text-base mt-2.5 ">{project.description}</p>
+            <div className="flex flex-wrap gap-2 my-4">
               {project.techStack.map((tech, index) => (
-                <span key={index}>{tech}</span>
+                <span
+                  className="bg-black text-white rounded-[50px] px-3 py-1 text-xs capitalize"
+                  key={index}
+                >
+                  {tech}
+                </span>
               ))}
             </div>
-            <p>
-              Role: <span>{project.role}</span>
+            <p className="mb-5 text-text font-medium text-base">
+              Role: <span className="text-black">{project.role}</span>
             </p>
             {project.link && (
               <Link href={project.link}>
