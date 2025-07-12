@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Funnel_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
+import ToastWrapper from "./toastWrapper";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -27,10 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.className} ${funnel.variable} antialiased `}
-      >
-        {children}
+      <body className={`${dmSans.className} ${funnel.variable} antialiased `}>
+        <ToastWrapper>{children}</ToastWrapper>
       </body>
     </html>
   );

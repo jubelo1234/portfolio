@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import aboutImg from "@/assets/images/abt-side.png";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
+import EmailLink from "@/components/emailLink";
 
 export default function Home() {
   return (
@@ -63,7 +64,6 @@ export default function Home() {
                 <span className="font-semibold text-black ">
                   frontend developer
                 </span>
-                {"  "}
                 who loves turning designs into user-friendly, sleek, responsive,
                 and interactive digital experiences. Let’s build something
                 amazing together.
@@ -77,7 +77,7 @@ export default function Home() {
                     View My Work
                   </Button>
                 </Link>
-                <Link href="#">
+                <Link href="#get-in-touch">
                   <Button
                     effect="shineHover"
                     className="bg-black hover:bg-black text-light font-semibold w-full text-sm sm:text-base h-[46px] rounded-[10px] text-center px-2"
@@ -165,7 +165,35 @@ export default function Home() {
             <Projects />
           </div>
         </section>
-        <section className="mt-10"></section>
+        <section
+          id="get-in-touch"
+          className="my-14 sm:my-[84px] lg:my-[108px] laptop:mt-[200px]"
+        >
+          <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
+            Get In Touch
+          </h1>
+          <div className="mt-6 md:mt-7 lg:mt-9 grid grid-cols-1 gap-3 sm:gap-5 five:grid-cols-2 laptop:mt-11 w-[90vw] max-w-[600px] mx-auto">
+            <EmailLink />
+
+            <Link
+              href="https://www.linkedin.com/in/berechiah"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" py-2.5 pl-3 pr-1  sm:px-3 rounded-[16px] bg-white  flex border border-border  items-center justify-center gap-3.5 md:gap-4"
+            >
+              <div className="relative">
+                <Image
+                  src={linkedInImg}
+                  alt="nextjs"
+                  className=" size-9 sm:size-11 md:size-[50px] lg:size-14  relative z-10"
+                />
+              </div>
+              <p className=" text-sm sm:text-base md:text-lg lg:text-xl text-black font-medium truncate">
+                My LinkedIn
+              </p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -51,7 +51,7 @@ export default function Projects() {
           key={id}
           className={`w-full flex flex-col gap-4 md:gap-7 laptop:odd:flex-row laptop:even:flex-row-reverse laptop:gap-16`}
         >
-          <div className="w-full laptop:w-[47.5%] laptop:min-w-[47.5%] sm:h-[300px] md:h-[350px] laptop:h-[430px] h-[220px] relative overflow-hidden rounded-[12px] shadow-[0_0_64px_0_#0000001A] border-2 border-main">
+          <div className="w-full laptop:w-[47.5%] laptop:min-w-[47.5%] sm:h-[300px] md:h-[350px] laptop:h-[420px] h-[220px] relative overflow-hidden rounded-[12px] shadow-[0_0_64px_0_#0000001A] border-2 border-main">
             <Image
               src={project.image}
               alt={project.title}
@@ -75,7 +75,11 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <p className=" mb-3.5 sm:mb-5 text-text font-medium text-base">
+            <p
+              className={`${
+                project.link && "mb-3.5 sm:mb-5"
+              } text-text font-medium text-base`}
+            >
               Role: <span className="text-black">{project.role}</span>
             </p>
             {project.link && (
