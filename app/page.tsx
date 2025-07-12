@@ -150,7 +150,7 @@ export default function Home() {
           <h1 className="text-3xl text-center  five:text-4xl sm:text-[40px] sm:leading-[1.2] lg:text-5xl lg:leading-[1.3] font-bold text-black font-funnel ">
             Skill set & Tools
           </h1>
-          <div className="mt-6 md:mt-7 lg:mt-9">
+          <div className="mt-6 md:mt-7 lg:mt-9 laptop:mt-11">
             <Skills />
           </div>
         </section>
