@@ -1,6 +1,7 @@
 import prodevsImage from "@/assets/images/prodevs2.jpg";
 import talentApplyImage from "@/assets/images/talentApply.png";
 import khnlImage from "@/assets/images/khnl.png";
+import wealthAppImage from "@/assets/images/wealthapp.jpg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -32,6 +33,15 @@ export default function Projects() {
       role: "Lead Frontend Developer",
       techStack: ["Next js", "Tailwind CSS", "Typescript", "Auth js"],
       image: khnlImage,
+    },
+    {
+      title: "WealthApp Website",
+      description:
+        "A marketing website for the Wealth real estate investment platform that simplifies property buying, flipping, and investment management. The site showcases the mobile app's features including property discovery, investment tracking, crowdfunding opportunities, and community engagement, designed to attract users and promote app downloads for real estate investors.",
+      role: "Sole Frontend Developer",
+      techStack: ["React", "Tailwind CSS", "Javascript", "Framer motion"],
+      link: "https://wealthapp.live/",
+      image: wealthAppImage,
     },
   ];
   return (
