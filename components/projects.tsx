@@ -22,7 +22,13 @@ export default function Projects() {
       description:
         "An AI-powered job search platform that streamlines the entire application process with automated job matching, application tracking, resume analysis, and interview preparation tools. The comprehensive career management solution helps job seekers optimize their search with personalized insights and AI-driven recommendations for faster, more confident job applications.",
       role: "Frontend Developer",
-      techStack: ["React", "Tailwind CSS", "Javascript", "Framer motion"],
+      techStack: [
+        "React",
+        "Tailwind CSS",
+        "Javascript",
+        "Framer motion",
+        "Redux",
+      ],
       link: "https://www.talentapply.io",
       image: talentApplyImage,
     },
@@ -31,7 +37,13 @@ export default function Projects() {
       description:
         "A comprehensive web application designed and built for the KHNL travel and tour agency to manage client bookings, trip requests, and financial operations. The platform streamlines business operations by providing tools for tracking customer inquiries, handling financial transactions, managing individual client beneficiaries, and overseeing corporate client personnel in one centralized system.",
       role: "Lead Frontend Developer",
-      techStack: ["Next js", "Tailwind CSS", "Typescript", "Auth js"],
+      techStack: [
+        "Next js",
+        "Tailwind CSS",
+        "Typescript",
+        "Auth js",
+        "Zustand",
+      ],
       image: khnlImage,
     },
     {
