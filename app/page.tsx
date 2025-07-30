@@ -43,12 +43,18 @@ export default function Home() {
                   />
                 </Link>
               </div>
-              <Button
-                effect="gooeyLeft"
-                className="bg-main group-hover:bg-main hover:bg-main text-light font-semibold text-sm sm:text-base h-[42px] sm:h-[46px] rounded-[10px] text-center px-5 sm:px-8"
+              <Link
+                href="/berechiah-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                My Resume
-              </Button>
+                <Button
+                  effect="gooeyLeft"
+                  className="bg-main group-hover:bg-main hover:bg-main text-light font-semibold text-sm sm:text-base h-[42px] sm:h-[46px] rounded-[10px] text-center px-5 sm:px-8"
+                >
+                  My Resume
+                </Button>
+              </Link>
             </nav>
           </div>
 
