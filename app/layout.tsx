@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} ${funnel.variable} antialiased `}>
+      <body className={`${dmSans.className} ${funnel.variable} antialiased  `}>
         <ToastWrapper>{children}</ToastWrapper>
       </body>
     </html>

@@ -68,7 +68,7 @@ export default function Home() {
               <p className="pt-3 sm:pt-4 text-text text-base sm:text-lg max-w-[620px] laptop:max-w-[576px] font-medium">
                 A passionate{" "}
                 <span className="font-semibold text-black ">
-                  frontend developer
+                  frontend developer{" "}
                 </span>
                 who loves turning designs into user-friendly, sleek, responsive,
                 and interactive digital experiences. Let’s build something
