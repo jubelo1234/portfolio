@@ -1,7 +1,7 @@
 import prodevsImage from "@/assets/images/prodevs2.jpg";
 import talentApplyImage from "@/assets/images/talentApply.png";
 import khnlImage from "@/assets/images/khnl.png";
-import wealthAppImage from "@/assets/images/wealthapp.jpg";
+import cordrosImage from "@/assets/images/cordros.jpg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -32,6 +32,22 @@ export default function Projects() {
       link: "https://www.talentapply.io",
       image: talentApplyImage,
     },
+
+    {
+      title: " Cordros Capital Group Platform",
+      description:
+        "Architected and developed a comprehensive 100+ page financial services platform for Cordros Capital Group, serving as the unified digital presence for one of Nigeria's leading investment banking conglomerates and all its subsidiaries. As the sole frontend developer, I delivered a complex multi-entity web application that seamlessly integrates diverse financial service offerings across the entire corporate structure.",
+      role: "Sole Frontend Developer",
+      techStack: [
+        "React",
+        "Next js",
+        "Tailwind CSS",
+        "Typescript",
+        "Framer motion",
+      ],
+      link: "https://web.cordros.com/",
+      image: cordrosImage,
+    },
     {
       title: "KHNL  Management System",
       description:
@@ -45,15 +61,6 @@ export default function Projects() {
         "Zustand",
       ],
       image: khnlImage,
-    },
-    {
-      title: "WealthApp Website",
-      description:
-        "A marketing website for the Wealth real estate investment platform that simplifies property buying, flipping, and investment management. The site showcases the mobile app's features including property discovery, investment tracking, crowdfunding opportunities, and community engagement, designed to attract users and promote app downloads for real estate investors.",
-      role: "Sole Frontend Developer",
-      techStack: ["React", "Tailwind CSS", "Javascript", "Framer motion"],
-      link: "https://wealthapp.live/",
-      image: wealthAppImage,
     },
   ];
   return (
