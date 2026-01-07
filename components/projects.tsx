@@ -45,7 +45,7 @@ export default function Projects() {
         "Typescript",
         "Framer motion",
       ],
-      link: "https://web.cordros.com/",
+      link: "https://cordros.com/",
       image: cordrosImage,
     },
     {
